@@ -1,11 +1,10 @@
 # -*- mode: python ; coding: utf-8 -*-
 
-
 block_cipher = None
 
 
 a = Analysis(['phagecom.py'],
-             pathex=['/Users/ryderg3/Documents/GitHub/PhageCommander_no_Glimmer/phagecommander'],
+             pathex=['C:\\Users\\GKRyd\\Documents\\GitHub\\PhageCommander_no_Glimmer\\phagecommander'],
              binaries=[],
              datas=[('species.txt', '.')],
              hiddenimports=[],
@@ -31,8 +30,4 @@ exe = EXE(pyz,
           upx=True,
           upx_exclude=[],
           runtime_tmpdir=None,
-          console=False )
-app = BUNDLE(exe,
-             name='phagecom.app',
-             icon=None,
-             bundle_identifier=None)
+          console=True )
