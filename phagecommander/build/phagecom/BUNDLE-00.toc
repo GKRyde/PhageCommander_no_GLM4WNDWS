@@ -1,3 +1,3 @@
 ([('phagecom',
-   '/Users/ryderg3/Documents/GitHub/PhageCommander-Final/phagecommander/dist/phagecom',
+   '/Users/ryderg3/Documents/GitHub/PhageCommander_no_Glimmer/phagecommander/dist/phagecom',
    'EXECUTABLE')],)
