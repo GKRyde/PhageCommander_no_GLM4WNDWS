@@ -866,6 +866,9 @@ class NewFileDialog(QDialog):
         self.speciesComboBox.addItems(Gene.SPECIES)
         self.speciesComboBox.setMaximumWidth(550) # Originally 250
         
+        glimmerBox.setCheckState(Qt.Unchecked)
+        glimmerBox.setEnabled(False)
+        
         # (GRyde) Testing disable of Glimmer box (works, just need to uncomment when ready to use)
         # platformCheck = platform.system()
         # platformCheck = platformCheck.lower()
@@ -908,14 +911,14 @@ class NewFileDialog(QDialog):
        
         # glimmer
         #checkBoxLayout.addWidget(glimmerLabel, 3, 0)
-        checkBoxLayout.addWidget(glimmerBox, 2, 0)
+        #checkBoxLayout.addWidget(glimmerBox, 2, 0)
         
         #checkBoxLayout.addWidget(genemarkLabel, 0, 0)
-        checkBoxLayout.addWidget(gmBox, 2, 1)
-        checkBoxLayout.addWidget(heuristicBox, 2, 2)
-        checkBoxLayout.addWidget(gmsBox, 3, 0)
-        checkBoxLayout.addWidget(gms2Box, 3, 1)
-        checkBoxLayout.addWidget(self.hmmBox, 3, 2)
+        checkBoxLayout.addWidget(gmBox, 2, 0)
+        checkBoxLayout.addWidget(heuristicBox, 2, 1)
+        checkBoxLayout.addWidget(gmsBox, 2, 2)
+        checkBoxLayout.addWidget(gms2Box, 3, 0)
+        checkBoxLayout.addWidget(self.hmmBox, 3, 1)
         
         # aragorn
         #checkBoxLayout.addWidget(aragornLabel, 5, 1)
